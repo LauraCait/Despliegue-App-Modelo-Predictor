@@ -3,10 +3,8 @@ Predictor de Deserción Estudiantil
 Una aplicación web desarrollada con Streamlit que utiliza Machine Learning para predecir la probabilidad de deserción estudiantil basándose en diversos factores académicos, socioeconómicos y demográficos.
 
 Características
-
-- Carga de datos: Importa y visualiza datasets de estudiantes
 - Entrenamiento de modelo: Utiliza Random Forest optimizado con hiperparámetros ajustados
-- Predicciones: Realiza predicciones individuales o en lote
+- Predicciones: Realiza predicciones individuales
 - Análisis: Visualiza métricas de rendimiento y importancia de características
 - Interfaz intuitiva: Navegación fácil con múltiples páginas organizadas
 
@@ -19,24 +17,16 @@ Clases de Predicción
 Requisitos
 
 - Python 3.8 o superior
-- Las dependencias listadas en `requirements.txt`
+- Las dependencias listadas en requirements.txt
 
 Instalación
 
 1. Clona o descarga este repositorio
 2. Navega al directorio del proyecto:
-   ```bash
-   cd Despliegue_App_Deserción
-   ```
-3. Instala las dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
+3. Instala las dependencias: pip install -r requirements.txt
 
 Ejecución
-
 Para ejecutar la aplicación: streamlit run app.py
-
 La aplicación se abrirá automáticamente en tu navegador en `http://localhost:8501`
 
 Estructura del Proyecto
@@ -60,26 +50,15 @@ Uso de la Aplicación
 1. Página de Inicio
 - Información general sobre la aplicación
 - Especificaciones del modelo
-- Instrucciones de uso
 
-2. Página de Datos
-- Cargar Datos: Sube tu dataset o usa los datos de ejemplo
-- Explorar Datos: Visualiza estadísticas y información del dataset
+2. Detalles del dataset
+- Visualización, reporte y análisis de los datos
 
-3. Página del Modelo
-- Prepara los datos para entrenamiento
-- Entrena el modelo Random Forest
-- Evalúa el rendimiento del modelo
-- Guarda/carga modelos entrenados
-
-4. Página de Predicciones
+3. Página de Predicciones
 - Predicción Individual: Ingresa datos de un estudiante específico
-- Predicción en Lote: Carga un archivo CSV para múltiples predicciones
 
-5. Página de Análisis
+4. Página de Análisis
 - Métricas: Visualiza accuracy, precision, recall y F1-score
-- Matriz de Confusión: Analiza errores de clasificación
-- Importancia de Características: Identifica las variables más relevantes
 
 Especificaciones del Modelo
 
@@ -95,11 +74,6 @@ Hiperparámetros optimizados:
 - class_weight: {0: 2.0, 1: 1.0, 2: 1.0}
 - ccp_alpha: 0.0
 
-Métricas esperadas:
-- Accuracy: ~79.7%
-- Precision (macro): ~75.8%
-- Recall (macro): ~75.8%
-- F1-Score (macro): ~75.6%
 
 Formato de Datos
 
